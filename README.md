@@ -66,7 +66,7 @@ A possible result: 63 m/s + 11 m/s = ~74 m/s
 My knowledge of Intel's TPB and Microsoft's TPL (two popular task-based parallelization libraries) made 
 it relatively easy to leverage Java 8's new CompletableFutures API. Other paths I could have used might have
 included a home spun thread pool with a blocking queue on either end to supply threads jobs and retrieve thread
-results results. In the end, CFs where quicker to implement, and additionally I used the continuation features
+results results. In the end, CFs were quicker to implement, and additionally I used the continuation features
 to ease the detection of the completion of all fetching tasks.
 
 ### Results of the java implementation
